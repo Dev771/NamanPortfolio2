@@ -1,0 +1,31 @@
+.desc {
+    & > *:first-child {
+        width: 80%;
+    }
+}
+
+.button {
+    width: 45px;
+    justify-content: end;
+    align-items: center;
+    padding: 10px 8px;
+    height: 45px;
+
+    transition: width .8s, padding .5s;
+
+    & > .text {
+        transition: opacity .8s;
+        opacity: 0;
+    }
+
+    &:hover {
+        width: 145px;
+        padding: 10px 20px;
+        aspect-ratio: unset;
+
+        & > .text {
+            opacity: 1;
+        }
+    }
+
+}

@@ -1,0 +1,23 @@
+$primary-color: #09090B;
+$primary-text-color: #FAFAFA;
+
+:root {
+    --primary-color: #{$primary-color};
+    --primary-text-color: #{$primary-text-color};
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+
+.main {
+    background-color: var(--primary-color);
+    width: 100%;
+    min-height: 100vh;
+    color: var(--primary-text-color);
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
