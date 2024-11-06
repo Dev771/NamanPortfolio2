@@ -7,7 +7,7 @@ const CaseStudy = () => {
         goodSpace: { 
             title: "Goodspace AI", 
             desc: "Goodspace AI streamlines recruitment with AI-driven tools for instant feedback, efficient screening, and seamless interview scheduling, making hiring faster and improving candidate experiences.", 
-            imgs: ["https://drive.google.com/file/d/1zWi21XuVdGvjxaZd6ZvlXTOpslRta6gn/view?usp=drive_link"] 
+            imgs: ["https://drive.google.com/file/d/1zWi21XuVdGvjxaZd6ZvlXTOpslRta6gn/view?usp=sharing"] 
         },
     };
 
