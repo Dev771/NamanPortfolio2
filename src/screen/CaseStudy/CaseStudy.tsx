@@ -6,7 +6,7 @@ const CaseStudy = () => {
     const data: Record<string, { title: string; desc: string; imgs: string[] }> = {
         goodSpace: { 
             title: "Goodspace AI", 
-            desc: "Goodspace AI streamlines recruitment with AI-driven tools for instant feedback, efficient screening, and seamless interview scheduling, making hiring faster and improving candidate experiences.", \
+            desc: "Goodspace AI streamlines recruitment with AI-driven tools for instant feedback, efficient screening, and seamless interview scheduling, making hiring faster and improving candidate experiences.", 
             imgs: [""] 
         },
     };
