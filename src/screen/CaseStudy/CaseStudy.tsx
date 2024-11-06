@@ -4,8 +4,11 @@ const CaseStudy = () => {
     const params = useParams();
 
     const data: Record<string, { title: string; desc: string; imgs: string[] }> = {
-        goodSpace: { title: "Goodspace AI", desc: "Goodspace AI streamlines recruitment with AI-driven tools for instant feedback, efficient screening, and seamless interview scheduling, making hiring faster and improving candidate experiences.", imgs: [] },
-
+        goodSpace: { 
+            title: "Goodspace AI", 
+            desc: "Goodspace AI streamlines recruitment with AI-driven tools for instant feedback, efficient screening, and seamless interview scheduling, making hiring faster and improving candidate experiences.", \
+            imgs: [""] 
+        },
     };
 
     if(params.name && data[params.name] !== undefined) {
