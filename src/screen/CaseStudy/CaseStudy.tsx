@@ -1,19 +1,19 @@
 import { useParams } from 'react-router-dom';
 
 const CaseStudy = () => {
-    const { name } = useParams();
+    const params = useParams();
 
-    const data = {
+    const data: Record<string, { title: string; desc: string; imgs: string[] }> = {
         goodSpace: { title: "Goodspace AI", desc: "Goodspace AI streamlines recruitment with AI-driven tools for instant feedback, efficient screening, and seamless interview scheduling, making hiring faster and improving candidate experiences.", imgs: [] },
 
     };
 
-    if(data[name] !== undefined) {
+    if(params.name && data[params.name] !== undefined) {
         return (
             <div className='container py-8 px-1 flex flex-col gap-6'>
-                <h2 className='text-[#FAFAFA] font-bold text-4xl'>{data[name].title}</h2>
-                <div className='text-[#A1A1AA]'>{data[name].desc}</div>
-                { data[name].imgs.map((a: string) => (
+                <h2 className='text-[#FAFAFA] font-bold text-4xl'>{data[params?.name].title}</h2>
+                <div className='text-[#A1A1AA]'>{data[params?.name].desc}</div>
+                { data[params?.name].imgs.map((a: string) => (
                     <img src={a} />
                 ))}
                 <div>Lets discuss the upcoming big sensation!</div>
