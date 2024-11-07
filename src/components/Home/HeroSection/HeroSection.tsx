@@ -3,8 +3,8 @@ import styles from './styles.module.scss'
 import KLOUDRAC from '../../../assets/svg/KLOUDRAC.svg';
 import GOODSPACE from '../../../assets/svg/GOODSPACE.svg';
 import BVICAM from '../../../assets/svg/BVICAM.svg';
-import Instagram from '../../../assets/svg/instagram.svg';
-import Twitter from '../../../assets/svg/Twitter.svg';
+import Behance from '../../../assets/svg/Behance.svg';
+import Medium from '../../../assets/svg/Medium.svg';
 import LinkedIn from '../../../assets/svg/LinkedIn.svg';
 import Download from '../../../assets/svg/Download.svg';
 import { Link } from 'react-router-dom';
@@ -12,9 +12,9 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
 
     const socials = [
-        { icon: Instagram, link: "", name: "Instagram" },
-        { icon: Twitter, link: "", name: "Twitter" },
-        { icon: LinkedIn, link: "", name: "LinkedIn" }
+        { icon: Behance, link: "https://www.behance.net/namanbhateja", name: "Behance" },
+        { icon: Medium, link: "https://medium.com/@namanbhatejadesign", name: "Medium" },
+        { icon: LinkedIn, link: "https://www.linkedin.com/in/namanbhateja0808/", name: "LinkedIn" }
     ]
 
     return (
@@ -32,7 +32,7 @@ const HeroSection = () => {
                 <div className='flex gap-5 items-center my-8'>
                     <Link to="https://drive.google.com/file/d/1ONHdiYOZcOzMsJme4tpQlN5XJku-B6_A/view?usp=sharing" className='bg-screenWhite text-[#09090B] font-bold text-base px-5 py-2 rounded-full flex gap-2 items-center'>Resume <img src={Download} alt='download' /></Link>
                     { socials.map((a) => (
-                        <Link to={a.link} className='bg-[#27272A] aspect-square w-[40px] flex justify-center items-center rounded-full p-2'><img src={a.icon} alt={a.name} /></Link>
+                        <Link to={a.link} title={a.name} className='bg-[#27272A] aspect-square w-[40px] flex justify-center items-center rounded-full p-2'><img src={a.icon} alt={a.name} /></Link>
                     ))}
                 </div>
             </div>

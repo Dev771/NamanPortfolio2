@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 const CaseStudy = () => {
@@ -8,20 +9,54 @@ const CaseStudy = () => {
             title: "Goodspace AI", 
             desc: "Goodspace AI streamlines recruitment with AI-driven tools for instant feedback, efficient screening, and seamless interview scheduling, making hiring faster and improving candidate experiences.", 
             imgs: [
-                "https://drive.google.com/file/d/1zWi21XuVdGvjxaZd6ZvlXTOpslRta6gn/view?usp=sharing","https://drive.google.com/file/d/1fMSa6xloXR_KPPqCvZeBS_BGN2in1eup/view?usp=sharing",
-                "https://drive.google.com/file/d/1regMlOe-8T3KA7IIkRvzxLI8-Ehuqp2E/view?usp=sharing","https://drive.google.com/file/d/1jtvsywmWSTGsMC-3ba4TN9wP7oCSK6y6/view?usp=sharing",
-                "https://drive.google.com/file/d/19QjIusKSFtKP1LJmQHQDf2Gs65IAEH9t/view?usp=sharing","https://drive.google.com/file/d/16n1YAwafSpOO8y_MPJber3TjNWf0DMqJ/view?usp=sharing",
-                "https://drive.google.com/file/d/1wu-7jwo3FynVZtnTNwN2VNbbOBkrKXiz/view?usp=sharing","https://drive.google.com/file/d/1WxMp9taaXbFv4LSopiTqceHony8pzjCz/view?usp=sharing",
-                "https://drive.google.com/file/d/1dTnoYf5qZzSL3zexIs-ZHDsEDSI_RABB/view?usp=sharing","https://drive.google.com/file/d/1gc7K9z1nPCoQFODnV-vzeUI8lDXcH1Ws/view?usp=sharing",
-                "https://drive.google.com/file/d/11Oblf1HjhBvZI6MDDFZcfay2e8my-9v2/view?usp=sharing","https://drive.google.com/file/d/1XYeSigCx90dJr4ZNQXs7oysLGeoDTEKX/view?usp=sharing",
-                "https://drive.google.com/file/d/12KH-sm_j-uz0Q8cVrY54OKkKGzImEX9I/view?usp=sharing","https://drive.google.com/file/d/1GDDO0UGftfNO2ktq26TgYJ9YrPxIk1O6/view?usp=sharing",
-                "https://drive.google.com/file/d/1KR3TEp8vl7ZLzzPnoa6XkEFh7WNn1m92/view?usp=sharing","https://drive.google.com/file/d/1IMq-lUs3psDgoH7n7IjDPlNvntbqybmh/view?usp=sharing",
-                "https://drive.google.com/file/d/1hpS2SFF1iFA7kMccYcIXNVsS3U-O9eoC/view?usp=sharing","https://drive.google.com/file/d/1YR9_xdYv1FwlgtamLpmoeQzAmqQFqjCc/view?usp=sharing",
-                "https://drive.google.com/file/d/1w6eLywnLWkirS4hwwAmrt4Q4-6fxRfGi/view?usp=sharing","https://drive.google.com/file/d/1Wi8ryuERfhg5MKXjuvePvy-O4dpIGQkw/view?usp=sharing",
-                "https://drive.google.com/file/d/1s42GI0kHf1-IzT_U1w7-rfL43RG84mUp/view?usp=sharing", "https://i.ibb.co/8gvLZZt/Slide-16-9-2.png"
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977428/Slide_16_9_-_2_hl4ypj.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977428/Slide_16_9_-_3_gpaufm.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977428/Slide_16_9_-_4_jftolf.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977428/Slide_16_9_-_5_wxg6jp.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977428/Slide_16_9_-_7_yezaht.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977428/Slide_16_9_-_8_wvm1jb.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977429/Slide_16_9_-_9_tdr0ut.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977429/Slide_16_9_-_9-1_ttntz6.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977430/Slide_16_9_-_10_ddxnzc.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977430/Slide_16_9_-_10-1_tm8qnv.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977429/Slide_16_9_-_11_shaj26.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977428/Slide_16_9_-_12_qcf7l1.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977427/Slide_16_9_-_13_kzdgor.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977428/Slide_16_9_-_14_nwfxqh.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977428/Slide_16_9_-_15_kjgp7q.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977429/Slide_16_9_-_16_v9x83d.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977429/Slide_16_9_-_17_p1ifpe.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977429/Slide_16_9_-_18_eqs0xr.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977430/Slide_16_9_-_20_fqrwgf.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977430/Slide_16_9_-_21_klwtty.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977430/Slide_16_9_-_22_vdld9f.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977430/Slide_16_9_-_23_g6zzv4.png"
             ] 
         },
+        veda: {
+            title: "Veda Smriti",
+            desc: "Veda Smriti is a modern app that simplifies ancient Vedic wisdom, offering personalized guidance, mantras, rituals, and spiritual teachings to help users explore and integrate Vedic knowledge into their daily lives.",
+            imgs: [
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730979516/Slide_16_9_-_1_dkogfa.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730979512/Slide_16_9_-_2_nltnv2.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730979512/Slide_16_9_-_3_idcjsl.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730979512/Slide_16_9_-_4_llbdel.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730979513/Slide_16_9_-_5_qrc5og.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730979513/Slide_16_9_-_6_igv9rs.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730979517/Slide_16_9_-_7_o1rvoq.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730979514/Slide_16_9_-_8_ml77ot.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730979514/Slide_16_9_-_9_lvyuio.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730979515/Slide_16_9_-_10_h3aqpk.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730979519/Slide_16_9_-_11_xlwce4.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730979519/Slide_16_9_-_12_qoodwu.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730979519/Slide_16_9_-_13_ohlini.png"
+            ]
+        }
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     if(params.name && data[params.name] !== undefined) {
         return (

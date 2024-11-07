@@ -10,7 +10,7 @@ const Projects = () => {
     const Projects = [
         { img: goodSpace, lok: "goodSpace", name: "Goodspace: Find work hire talent", desc: "Bring ancient Vedic wisdom to your fingertips, offering personalized spiritual guidance, mantras, meditation, and rituals for holistic growth." },
         { img: veda, lok: "veda", name: "Veda Smriti: World Vedic Wisdom", desc: "Bring ancient Vedic wisdom to your fingertips, offering personalized spiritual guidance, mantras, meditation, and rituals for holistic growth." },
-        { img: goodSpaceInterview, lok: "goodSpaceInterview", name: "Goodspace : Auto Interview", desc: "An AI-powered interviewer that conducts structured interviews consistently, assessing both technical and soft skills objectively." },
+        { img: goodSpaceInterview, lok: "goodSpaceInterview", name: "Goodspace : Auto Interview", desc: "An AI-powered interviewer that conducts structured interviews consistently, assessing both technical and soft skills objectively.", link: "https://medium.com/design-bootcamp/revolutionizing-ai-job-interviews-with-goodspace-e52384c89b9e" },
         { img: GreenGenie, lok: "GreenGenie", name: "Green Genie", desc: "Green Genie aims to provide a convenient and reliable service that delivers high-quality, fresh, and exotic fruits and vegetables straight to your doorsteps." },
     ]
 
@@ -26,7 +26,7 @@ const Projects = () => {
                                 <h3 className='text-screenWhite'>{project.name}</h3>
                                 <div className='text-offWhite mr-9'>{project.desc}</div>
                             </div>
-                            <Link to={`case-study/${project.lok}`} className={`${styles.button} bg-screenWhite text-[#09090B] flex font-bold text-base rounded-full text-nowrap items-center gap-1`}>
+                            <Link to={project.link ? project.link : `case-study/${project.lok}`} target='_blank' className={`${styles.button} bg-screenWhite text-[#09090B] flex font-bold text-base rounded-full text-nowrap items-center gap-1`}>
                                 <div className={styles.text}>Visit Site</div> 
                                 <div className={styles.sign}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width={30} height={30} viewBox="0 0 20 20" fill="none">
