@@ -18,7 +18,7 @@ const CaseStudy = () => {
                 "https://drive.google.com/file/d/1KR3TEp8vl7ZLzzPnoa6XkEFh7WNn1m92/view?usp=sharing","https://drive.google.com/file/d/1IMq-lUs3psDgoH7n7IjDPlNvntbqybmh/view?usp=sharing",
                 "https://drive.google.com/file/d/1hpS2SFF1iFA7kMccYcIXNVsS3U-O9eoC/view?usp=sharing","https://drive.google.com/file/d/1YR9_xdYv1FwlgtamLpmoeQzAmqQFqjCc/view?usp=sharing",
                 "https://drive.google.com/file/d/1w6eLywnLWkirS4hwwAmrt4Q4-6fxRfGi/view?usp=sharing","https://drive.google.com/file/d/1Wi8ryuERfhg5MKXjuvePvy-O4dpIGQkw/view?usp=sharing",
-                "https://drive.google.com/file/d/1s42GI0kHf1-IzT_U1w7-rfL43RG84mUp/view?usp=sharing"
+                "https://drive.google.com/file/d/1s42GI0kHf1-IzT_U1w7-rfL43RG84mUp/view?usp=sharing", "https://i.ibb.co/8gvLZZt/Slide-16-9-2.png"
             ] 
         },
     };
