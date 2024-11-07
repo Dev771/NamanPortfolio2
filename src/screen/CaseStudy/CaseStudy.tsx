@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const CaseStudy = () => {
     const params = useParams();
@@ -67,13 +67,13 @@ const CaseStudy = () => {
                     <img src={a} />
                 ))}
                 <div>Lets discuss the upcoming big sensation!</div>
-                <div className='bg-screenWhite w-fit text-[#09090B] font-bold text-base px-5 py-2 rounded-full flex gap-2 items-center'>Hit me up, let’s vibe</div>
+                <Link to="mailto:namanbhateja.work@gmail.com" className='bg-screenWhite w-fit text-[#09090B] font-bold text-base px-5 py-2 rounded-full flex gap-2 items-center'>Hit me up, let’s vibe</Link>
             </div>
         )
     }
 
     return (
-        <div className='container'>
+        <div className='container  my-6 h-[70vh] flex flex-col'>
             <div className='text-[#A1A1AA]'>This case study is</div>
             <div className='w-[80%] h-[50vh] flex flex-col mx-auto justify-evenly items-center'>
                 <div className='text-3xl'>Coming</div>
