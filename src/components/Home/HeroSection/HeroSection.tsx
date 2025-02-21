@@ -31,7 +31,7 @@ const HeroSection = () => {
                     <img src={BVICAM} />
                 </div>
                 <div className='flex gap-5 items-center my-8'>
-                    <Link to="https://drive.google.com/file/d/1ONHdiYOZcOzMsJme4tpQlN5XJku-B6_A/view?usp=sharing" className='bg-screenWhite text-[#09090B] font-bold text-base px-5 py-2 rounded-full flex gap-2 items-center'>Resume <img src={Download} alt='download' /></Link>
+                    <Link to="https://drive.google.com/file/d/1hrdcc1A6IyWxyq43FtkoQqebtV02CAsp/view?usp=sharing" className='bg-screenWhite text-[#09090B] font-bold text-base px-5 py-2 rounded-full flex gap-2 items-center'>Resume <img src={Download} alt='download' /></Link>
                     { socials.map((a) => (
                         <Link to={a.link} target='_blank' title={a.name} className='bg-[#27272A] aspect-square w-[40px] flex justify-center items-center rounded-full p-2'><img src={a.icon} alt={a.name} /></Link>
                     ))}
