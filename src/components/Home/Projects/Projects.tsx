@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Projects = () => {
     const Projects = [
-        { img: goodSpace, lok: "goodSpace", name: "Goodspace: Find work hire talent", desc: "Bring ancient Vedic wisdom to your fingertips, offering personalized spiritual guidance, mantras, meditation, and rituals for holistic growth." },
+        { img: goodSpace, lok: "goodSpace", name: "Goodspace: Find work hire talent", desc: "Goodspace AI streamlines recruitment with AI-driven tools for instant feedback, efficient screening, and seamless interview scheduling, making hiring faster and improving candidate experiences." },
         { img: veda, lok: "veda", name: "Veda Smriti: World Vedic Wisdom", desc: "Bring ancient Vedic wisdom to your fingertips, offering personalized spiritual guidance, mantras, meditation, and rituals for holistic growth." },
         { img: goodSpaceInterview, lok: "goodSpaceInterview", name: "Goodspace : Auto Interview", desc: "An AI-powered interviewer that conducts structured interviews consistently, assessing both technical and soft skills objectively.", link: "https://medium.com/design-bootcamp/revolutionizing-ai-job-interviews-with-goodspace-e52384c89b9e" },
         { img: GreenGenie, lok: "GreenGenie", name: "Green Genie", desc: "Green Genie aims to provide a convenient and reliable service that delivers high-quality, fresh, and exotic fruits and vegetables straight to your doorsteps." },

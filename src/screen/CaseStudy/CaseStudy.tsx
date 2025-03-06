@@ -9,7 +9,7 @@ const CaseStudy = () => {
             title: "Goodspace AI", 
             desc: "Goodspace AI streamlines recruitment with AI-driven tools for instant feedback, efficient screening, and seamless interview scheduling, making hiring faster and improving candidate experiences.", 
             imgs: [
-                "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977428/Slide_16_9_-_2_hl4ypj.png",
+                "https://res.cloudinary.com/db4cbtzey/image/upload/v1741280194/001_u4phf8.png",
                 "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977428/Slide_16_9_-_3_gpaufm.png",
                 "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977428/Slide_16_9_-_4_jftolf.png",
                 "https://res.cloudinary.com/db4cbtzey/image/upload/v1730977428/Slide_16_9_-_5_wxg6jp.png",
